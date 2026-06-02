@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+
+#wrapper{
+    text-align: center;
+    font-family: monospace;
+    background-image: url("images/pixel-game-1920-x-1080-background-iwvvi7o2wi7sb67n.jpg");
+    background-size: 1300px;
+    background-position: center;
+}
+
+#title {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 20px;
+}
+#buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#redColor {
+    position: absolute;
+    top: 550px;
+    right: 1000px;
+    background-color: red;
+}
+
+#greenColor {
+    position: absolute;
+    top: 500px;
+    right: 1000px;
+    background-color: rgb(47, 128, 0);
+}
+
+#pinkColor {
+    position: absolute;
+    top: 450px;
+    right: 1000px;
+    background-color: palevioletred;
+}
+
+#yellowColor {
+    position: absolute;
+    top: 400px;
+    right: 1000px;
+    background-color: yellow;
+}
+
+#playBtn {
+    background-color: aqua;
+}
+
+#stopBtn {
+    background-color: aqua;
+}
+
+#restartButton {
+    background-color: aqua;
+}
+
+.speed-container {
+  width: 120px;
+  margin: 20px auto;
+}
+
+#speedSlider {
+  width: 100%;
+  -webkit-appearance: none;
+  /*mettre webkit appearance comme none supprime l'apparence par defaut qui aurait ete donnee par le webkit(Chrome, Safari...)*/
+  appearance: none;
+  height: 10px;
+  border-radius: 5px;
+  background: #cce0ff;
+  outline: none;
+}
+
+/* Barre(pas important sur Chrome ou Edge mais peut etre indispensable pour empecher une barre par defaut moche sur un autre navigateur ou syst. d'exploitation) */
+#speedSlider::-webkit-slider-runnable-track {
+  height: 15px;
+  border-radius: 5px;
+}
+
+/* Curseur */
+#speedSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #1e90ff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
